@@ -1,5 +1,5 @@
 <html lang = "en-US" style = "height: 100%;">
-        <style>
+<style>
     h1 {
         color: firebrick;
         text-align: center;
@@ -7,7 +7,7 @@
         text-decoration-style: wavy;
     }
     table {
-        height: 75%;
+        height: 50%;
         width: 50%;
         align: center;
     }
@@ -17,13 +17,14 @@
         width: 200px;
     }
     #DONE{
-        color: rebeccapurple;
+        color: white;
         font-size: 20px;
         text-align: center;
     }
     #winnerPage {
         text-align: center;
         font-size: 50px;
+        color: white
     }
     #button {
         text-align: center
@@ -42,10 +43,21 @@
 </style>
 <head>
     <h1>Danny Buscemi's TICTACTOE</h1>
-    <div id="button">
-        <button type="click" id="reset">Play Again!</button>
+    <div id = "button">
+        <button type = "click" id = "reset">Play Again!</button>
     </div>
-    
+    <div id="player1" style = "text-align: center; font-size: 25px; color: red">
+        <div id="p1Name"> Danny Devito</div> 
+        <span id="p1Tally" style = "font-size: 25px; color: red;">0</span>
+    </div>
+    <div id="player2" style="text-align:center; font-size: 25px; color: blueviolet">
+            <div id = "p2Name">Steve Buscemi</div>
+            <span id = "p2Tally" style = "font-size: 25px; color: blueviolet;">0</span>
+        </div>
+        <input type = "input" id ="input1">
+        <button type = "submit" style = "text: center;" id = "button1"> Player1</button>
+    <input type = "input" id ="input2">
+    <button type = "submit" style = "text: center" id = "button2"> Player2 </button>
 </head>
 <body class="bg">
     <table align="center" id="ticTacToe">
